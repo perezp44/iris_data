@@ -38,10 +38,10 @@ export(iris, "./data/iris.xml")     # XML
 
 
 #--------------------- te vas a TERMINAL y haces esto para subir cambios
-git remote add origin https://github.com/perezp44/iris_data.git
-git add -A
-git commit --all --message "first commit"
-git push -u origin master
+# git remote add origin https://github.com/perezp44/iris_data.git
+# git add -A
+# git commit --all --message "first commit"
+# git push -u origin master
 
 
 #- para cargar los datos del repo iris_data
