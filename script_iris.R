@@ -1,0 +1,36 @@
+#- simplmente crear iris en diferentes formatos para practicar importación de datos en curso R
+iris <- iris
+
+library(readr)
+write_csv(iris, "./data/iris.csv")
+
+
+library(xlsx)
+write.xlsx(iris, "./data/iris.xlsx")
+
+
+library(haven)
+write_sav(iris, "./data/iris.sav")
+
+
+library(foreign)
+write.dta(iris, "./data/iris.dta")
+#write_sas(mtcars, "./data/mtcars.sas") 
+
+
+save(iris,  file = "./data/iris.RData")
+
+write_rds(iris, "./data/iris.rds")
+
+
+library(rio)
+#install_formats()
+#library(rmatio)
+#export(iris, "./data/iris.csv")    # comma-separated values
+#export(iris, "./data/iris.rds")    # R serialized
+#export(iris, "./data/iris.sav")    # SPSS
+export(iris, "./data/iris.json")    # JSON
+export(iris, "./data/iris.arff")    # Weka Attribute-Relation File Format
+export(iris, "./data/iris.xml")     # XML
+#export(iris, "./data/iris.mat")     # Matlab
+
