@@ -34,3 +34,14 @@ export(iris, "./data/iris.arff")    # Weka Attribute-Relation File Format
 export(iris, "./data/iris.xml")     # XML
 #export(iris, "./data/iris.mat")     # Matlab
 
+
+
+
+#--------------------- te vas a TERMINAL y haces esto para subir cambios (en realidad solo hace falta el git push)
+
+
+
+git remote add origin https://github.com/perezp44/iris_data.git
+git add -A
+git commit --all --message "first commit"
+git push -u origin master
