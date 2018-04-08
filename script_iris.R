@@ -37,11 +37,19 @@ export(iris, "./data/iris.xml")     # XML
 
 
 
-#--------------------- te vas a TERMINAL y haces esto para subir cambios (en realidad solo hace falta el git push)
-
-
-
+#--------------------- te vas a TERMINAL y haces esto para subir cambios
 git remote add origin https://github.com/perezp44/iris_data.git
 git add -A
 git commit --all --message "first commit"
 git push -u origin master
+
+
+#- para cargar los datos del repo iris_data
+
+url <- "https://raw.githubusercontent.com/perezp44/iris_data/master/data/iris.csv"
+
+library(readr)
+iris_imp_csv <- read_csv(url)
+
+library(rio)
+iris_csv_rio <- import(url)   # comma-separated values
