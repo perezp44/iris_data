@@ -1,5 +1,3 @@
 # iris_data
 
-A repo only to practice data import in a introductory R course.
-
-It has the iris data set in several formats to import.
+A repo to practice data import in a introductory R course. It only has the iris data set in several formats.
